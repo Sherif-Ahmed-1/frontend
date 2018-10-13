@@ -1,0 +1,7 @@
+sdou: required
+services:
+  - docker
+before_install:
+  - docker build -f Dockerfile.dev -t sherifahmed/frontend .
+script:
+  -docker run sherifahmed/frontend npm run test -- --coverage
