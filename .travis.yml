@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -f Dockerfile.dev -t sherifahmed/frontend .
 script :
-  -docker run sherifahmed/frontend npm run test -- --coverage
+  - docker run sherifahmed/frontend npm run test -- --coverage
